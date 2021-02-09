@@ -1,0 +1,109 @@
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(32, 48, 71);
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions button {
+  font-weight: 600;
+  width: 160px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.actions button[type="button"] {
+  background:  rgb(110, 127, 143);
+}
+
+.actions button + button {
+  margin-left: 12px;
+}
+
+button[type="submit"]{
+  background: rgb(46, 117, 173);
+  border: none;
+  padding: 12px 10px;
+  transition: .2s ease-in-out;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: rgba(65, 63, 76, .1)
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.profile-picker {
+  margin: 36px 0;
+  border: none;
+}
+
+.profile-picker, .profile-picker img, .profile-placeholder {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile-picker img {
+  object-fit: cover;
+}
+
+.profile-placeholder {
+  background-color: #cecece;
+  margin: auto;
+}
+
+form {
+  padding: 36px;
+  background-color: #fff;
+  width: 400px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-result {
+  color: #fff;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 36px 0 0;
+}
+
+.upload-result h2, .upload-result a {
+  color: #fff;
+}
+
+.upload-result h2 + a{
+  margin-left: 12px;
+}
